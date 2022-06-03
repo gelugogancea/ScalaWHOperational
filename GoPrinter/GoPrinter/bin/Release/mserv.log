@@ -1,0 +1,30 @@
+Microsoft (R) .NET Framework Installation utility Version 2.0.50727.1433
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe assembly's progress.
+The file is located at D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.InstallLog.
+Installing assembly 'D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe
+   logfile = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.InstallLog
+Installing service GoPrinterService...
+Service GoPrinterService has been successfully installed.
+Creating EventLog source GoPrinterService in log Application...
+
+The Install phase completed successfully, and the Commit phase is beginning.
+See the contents of the log file for the D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe assembly's progress.
+The file is located at D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.InstallLog.
+Committing assembly 'D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe
+   logfile = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.InstallLog
+
+The Commit phase completed successfully.
+
+The transacted install has completed.

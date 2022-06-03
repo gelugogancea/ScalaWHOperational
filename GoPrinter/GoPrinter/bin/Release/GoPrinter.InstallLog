@@ -1,0 +1,34 @@
+﻿Installing assembly 'D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe
+   logfile = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.InstallLog
+Installing service GoPrinterService...
+Service GoPrinterService has been successfully installed.
+Creating EventLog source GoPrinterService in log Application...
+Committing assembly 'D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe
+   logfile = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.InstallLog
+Uninstalling assembly 'D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe
+   logfile = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.InstallLog
+Removing EventLog source GoPrinterService.
+Service GoPrinterService is being removed from the system...
+Service GoPrinterService was successfully removed from the system.
+Installing assembly 'D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe
+   logfile = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.InstallLog
+Installing service GoPrinterService...
+Service GoPrinterService has been successfully installed.
+Creating EventLog source GoPrinterService in log Application...
+Committing assembly 'D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.exe
+   logfile = D:\AustralProject\GoWareHouse\GoPrintServer\GoPrinter\GoPrinter\bin\Release\GoPrinter.InstallLog

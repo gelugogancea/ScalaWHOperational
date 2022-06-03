@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SerialDataSet" targetNamespace="http://tempuri.org/SerialDataSet.xsd" xmlns:mstns="http://tempuri.org/SerialDataSet.xsd" xmlns="http://tempuri.org/SerialDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SerialDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SerialDataSet" msprop:Generator_DataSetName="SerialDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblSerialBox" msprop:Generator_UserTableName="tblSerialBox" msprop:Generator_RowDeletedName="tblSerialBoxRowDeleted" msprop:Generator_RowChangedName="tblSerialBoxRowChanged" msprop:Generator_RowClassName="tblSerialBoxRow" msprop:Generator_RowChangingName="tblSerialBoxRowChanging" msprop:Generator_RowEvArgName="tblSerialBoxRowChangeEvent" msprop:Generator_RowEvHandlerName="tblSerialBoxRowChangeEventHandler" msprop:Generator_TableClassName="tblSerialBoxDataTable" msprop:Generator_TableVarName="tabletblSerialBox" msprop:Generator_RowDeletingName="tblSerialBoxRowDeleting" msprop:Generator_TablePropName="tblSerialBox">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SerialBox" msprop:Generator_UserColumnName="SerialBox" msprop:Generator_ColumnPropNameInRow="SerialBox" msprop:Generator_ColumnVarNameInTable="columnSerialBox" msprop:Generator_ColumnPropNameInTable="SerialBoxColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderNo" msprop:Generator_UserColumnName="OrderNo" msprop:Generator_ColumnPropNameInRow="OrderNo" msprop:Generator_ColumnVarNameInTable="columnOrderNo" msprop:Generator_ColumnPropNameInTable="OrderNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderRoute" msprop:Generator_UserColumnName="OrderRoute" msprop:Generator_ColumnPropNameInRow="OrderRoute" msprop:Generator_ColumnVarNameInTable="columnOrderRoute" msprop:Generator_ColumnPropNameInTable="OrderRouteColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomCode" msprop:Generator_UserColumnName="CustomCode" msprop:Generator_ColumnPropNameInRow="CustomCode" msprop:Generator_ColumnVarNameInTable="columnCustomCode" msprop:Generator_ColumnPropNameInTable="CustomCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerName" msprop:Generator_UserColumnName="CustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderType" msprop:Generator_UserColumnName="OrderType" msprop:Generator_ColumnPropNameInRow="OrderType" msprop:Generator_ColumnVarNameInTable="columnOrderType" msprop:Generator_ColumnPropNameInTable="OrderTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TranspCar" msprop:Generator_UserColumnName="TranspCar" msprop:Generator_ColumnVarNameInTable="columnTranspCar" msprop:Generator_ColumnPropNameInRow="TranspCar" msprop:Generator_ColumnPropNameInTable="TranspCarColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsInventoryList" targetNamespace="http://tempuri.org/dsInventoryList.xsd" xmlns:mstns="http://tempuri.org/dsInventoryList.xsd" xmlns="http://tempuri.org/dsInventoryList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsInventoryList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsInventoryList" msprop:Generator_DataSetName="dsInventoryList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblInventoryList" msprop:Generator_UserTableName="tblInventoryList" msprop:Generator_RowDeletedName="tblInventoryListRowDeleted" msprop:Generator_RowChangedName="tblInventoryListRowChanged" msprop:Generator_RowClassName="tblInventoryListRow" msprop:Generator_RowChangingName="tblInventoryListRowChanging" msprop:Generator_RowEvArgName="tblInventoryListRowChangeEvent" msprop:Generator_RowEvHandlerName="tblInventoryListRowChangeEventHandler" msprop:Generator_TableClassName="tblInventoryListDataTable" msprop:Generator_TableVarName="tabletblInventoryList" msprop:Generator_RowDeletingName="tblInventoryListRowDeleting" msprop:Generator_TablePropName="tblInventoryList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InventNo" msprop:Generator_UserColumnName="InventNo" msprop:Generator_ColumnPropNameInRow="InventNo" msprop:Generator_ColumnVarNameInTable="columnInventNo" msprop:Generator_ColumnPropNameInTable="InventNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ListNo" msprop:Generator_UserColumnName="ListNo" msprop:Generator_ColumnPropNameInRow="ListNo" msprop:Generator_ColumnVarNameInTable="columnListNo" msprop:Generator_ColumnPropNameInTable="ListNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KeyStock" msprop:Generator_UserColumnName="KeyStock" msprop:Generator_ColumnPropNameInRow="KeyStock" msprop:Generator_ColumnVarNameInTable="columnKeyStock" msprop:Generator_ColumnPropNameInTable="KeyStockColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Locator" msprop:Generator_UserColumnName="Locator" msprop:Generator_ColumnPropNameInRow="Locator" msprop:Generator_ColumnVarNameInTable="columnLocator" msprop:Generator_ColumnPropNameInTable="LocatorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="InventArea" msprop:Generator_UserColumnName="InventArea" msprop:Generator_ColumnPropNameInRow="InventArea" msprop:Generator_ColumnVarNameInTable="columnInventArea" msprop:Generator_ColumnPropNameInTable="InventAreaColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblInventoryListOperator" msprop:Generator_UserTableName="tblInventoryListOperator" msprop:Generator_RowDeletedName="tblInventoryListOperatorRowDeleted" msprop:Generator_RowChangedName="tblInventoryListOperatorRowChanged" msprop:Generator_RowClassName="tblInventoryListOperatorRow" msprop:Generator_RowChangingName="tblInventoryListOperatorRowChanging" msprop:Generator_RowEvArgName="tblInventoryListOperatorRowChangeEvent" msprop:Generator_RowEvHandlerName="tblInventoryListOperatorRowChangeEventHandler" msprop:Generator_TableClassName="tblInventoryListOperatorDataTable" msprop:Generator_TableVarName="tabletblInventoryListOperator" msprop:Generator_RowDeletingName="tblInventoryListOperatorRowDeleting" msprop:Generator_TablePropName="tblInventoryListOperator">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KeyStock" msprop:Generator_UserColumnName="KeyStock" msprop:Generator_ColumnVarNameInTable="columnKeyStock" msprop:Generator_ColumnPropNameInRow="KeyStock" msprop:Generator_ColumnPropNameInTable="KeyStockColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Locator" msprop:Generator_UserColumnName="Locator" msprop:Generator_ColumnVarNameInTable="columnLocator" msprop:Generator_ColumnPropNameInRow="Locator" msprop:Generator_ColumnPropNameInTable="LocatorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ValidQty" msprop:Generator_UserColumnName="ValidQty" msprop:Generator_ColumnVarNameInTable="columnValidQty" msprop:Generator_ColumnPropNameInRow="ValidQty" msprop:Generator_ColumnPropNameInTable="ValidQtyColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
