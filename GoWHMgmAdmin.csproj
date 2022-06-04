@@ -1,0 +1,647 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDDDF2B6-C8E0-41D6-8B58-92EBEF86AD3E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GoWHMgmAdmin</RootNamespace>
+    <AssemblyName>GoWHMgmAdmin</AssemblyName>
+    <ApplicationIcon>GRAPH07.ICO</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ManifestCertificateThumbprint>EA5E7A78C0F1160D5E7FCCAAA23FAEC2FE53B18E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>GoWHMgmAdmin_TemporaryKey.pfx</ManifestKeyFile>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>D:\AustralProject\GoWareHouse\PC\GoWHAdmin\GoWHAdminSetup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <StartupObject>GoWHMgmAdmin.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>4</ApplicationRevision>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v7.3, Version=7.3.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.Utils.v7.3, Version=7.3.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraCharts.v7.3, Version=7.3.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v7.3, Version=7.3.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraGrid.v7.3, Version=7.3.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v7.3, Version=7.3.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1" />
+    <Reference Include="DevExpress.XtraPrinting.v7.3, Version=7.3.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DevExpressLib\DevExpress.XtraPrinting.v7.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v7.3, Version=7.3.8.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CryptorEngine.cs" />
+    <Compile Include="DataSetInventory.cs">
+      <DependentUpon>DataSetInventory.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetInventory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetInventory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMonitor.cs">
+      <DependentUpon>DataSetMonitor.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetMonitor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMonitor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsDeliveryForms.cs">
+      <DependentUpon>dsDeliveryForms.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet\dsDeliveryForms.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDeliveryForms.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsInventoryList.cs">
+      <DependentUpon>dsInventoryList.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet\dsInventoryList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInventoryList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsPickingList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPickingList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsRptWHInternMove01.cs">
+      <DependentUpon>dsRptWHInternMove01.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet\dsRptWHInternMove01.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptWHInternMove01.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsStock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsStock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddConf3DLoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddConf3DLoc.Designer.cs">
+      <DependentUpon>frmAddConf3DLoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddConfAreaStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddConfAreaStorage.Designer.cs">
+      <DependentUpon>frmAddConfAreaStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorizationLocalMove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthorizationLocalMove.Designer.cs">
+      <DependentUpon>frmAuthorizationLocalMove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorizationStArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuthorizationStArea.Designer.cs">
+      <DependentUpon>frmAuthorizationStArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCkPasswd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCkPasswd.Designer.cs">
+      <DependentUpon>frmCkPasswd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassification.Designer.cs">
+      <DependentUpon>frmClassification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeliveryStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeliveryStatus.Designer.cs">
+      <DependentUpon>frmDeliveryStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeliveryTransp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeliveryTransp.Designer.cs">
+      <DependentUpon>frmDeliveryTransp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportArticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportArticle.Designer.cs">
+      <DependentUpon>frmImportArticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportWareHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportWareHouse.Designer.cs">
+      <DependentUpon>frmImportWareHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvenoryAddCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvenoryAddCount.Designer.cs">
+      <DependentUpon>frmInvenoryAddCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventoryConfigBin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventoryConfigBin.Designer.cs">
+      <DependentUpon>frmInventoryConfigBin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventoryGenerateList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventoryGenerateList.Designer.cs">
+      <DependentUpon>frmInventoryGenerateList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventoryInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventoryInit.Designer.cs">
+      <DependentUpon>frmInventoryInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventoryOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventoryOperator.Designer.cs">
+      <DependentUpon>frmInventoryOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventoryOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventoryOrder.Designer.cs">
+      <DependentUpon>frmInventoryOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventoryTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventoryTeam.Designer.cs">
+      <DependentUpon>frmInventoryTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonitor.Designer.cs">
+      <DependentUpon>frmMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonitorInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonitorInventory.Designer.cs">
+      <DependentUpon>frmMonitorInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewTask.Designer.cs">
+      <DependentUpon>frmNewTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPresentationFom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPresentationFom.Designer.cs">
+      <DependentUpon>frmPresentationFom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegisterMoveArticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegisterMoveArticle.Designer.cs">
+      <DependentUpon>frmRegisterMoveArticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetMainSVRParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetMainSVRParam.Designer.cs">
+      <DependentUpon>frmSetMainSVRParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowOrder4Delivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowOrder4Delivery.Designer.cs">
+      <DependentUpon>frmShowOrder4Delivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowOrderInTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowOrderInTask.Designer.cs">
+      <DependentUpon>frmShowOrderInTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowReport.Designer.cs">
+      <DependentUpon>frmShowReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStorageProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStorageProperties.Designer.cs">
+      <DependentUpon>frmStorageProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewInventory.Designer.cs">
+      <DependentUpon>frmViewInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewInventorySetParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewInventorySetParam.Designer.cs">
+      <DependentUpon>frmViewInventorySetParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportSupplierAndCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportSupplierAndCustomer.Designer.cs">
+      <DependentUpon>ImportSupplierAndCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewEx1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="mRegistry.cs" />
+    <Compile Include="MyComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyComboBox.Designer.cs">
+      <DependentUpon>MyComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyGlobal.cs" />
+    <Compile Include="Program.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddConf3DLoc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddConf3DLoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddConfAreaStorage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddConfAreaStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuthorizationStArea.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAuthorizationStArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCkPasswd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCkPasswd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassification.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmClassification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeliveryStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDeliveryStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeliveryTransp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDeliveryTransp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportArticle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmImportArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportWareHouse.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmImportWareHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvenoryAddCount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInvenoryAddCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventoryConfigBin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInventoryConfigBin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventoryGenerateList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInventoryGenerateList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventoryInit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInventoryInit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventoryOperator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInventoryOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventoryTeam.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInventoryTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonitor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonitorInventory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMonitorInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPresentationFom.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPresentationFom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegisterMoveArticle.resx">
+      <DependentUpon>frmRegisterMoveArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetMainSVRParam.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSetMainSVRParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowOrder4Delivery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmShowOrder4Delivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowOrderInTask.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmShowOrderInTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowReport.resx">
+      <DependentUpon>frmShowReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStorageProperties.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmStorageProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewInventory.resx">
+      <DependentUpon>frmViewInventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewInventorySetParam.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmViewInventorySetParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportSupplierAndCustomer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImportSupplierAndCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptStock.rdlc" />
+    <EmbeddedResource Include="Reports\rptWHInternMove.rdlc" />
+    <EmbeddedResource Include="Reports\xtrDeliveryForms.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>xtrDeliveryForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xtrInventoryList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>xtrInventoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xtrPickingList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>xtrPickingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xtrRptWHInternMove01.resx">
+      <DependentUpon>xtrRptWHInternMove01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUsers.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="DataSetInventory.xsc">
+      <DependentUpon>DataSetInventory.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetInventory.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetInventory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetInventory.xss">
+      <DependentUpon>DataSetInventory.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMonitor.xsc">
+      <DependentUpon>DataSetMonitor.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMonitor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMonitor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetMonitor.xss">
+      <DependentUpon>DataSetMonitor.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsDeliveryForms.xsc">
+      <DependentUpon>dsDeliveryForms.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsDeliveryForms.xsd">
+      <SubType>
+      </SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDeliveryForms.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsDeliveryForms.xss">
+      <DependentUpon>dsDeliveryForms.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsInventoryList.xsc">
+      <DependentUpon>dsInventoryList.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsInventoryList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventoryList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsInventoryList.xss">
+      <DependentUpon>dsInventoryList.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsPickingList.xsc">
+      <DependentUpon>dsPickingList.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsPickingList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPickingList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsPickingList.xss">
+      <DependentUpon>dsPickingList.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsRptWHInternMove01.xsc">
+      <DependentUpon>dsRptWHInternMove01.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsRptWHInternMove01.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptWHInternMove01.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsRptWHInternMove01.xss">
+      <DependentUpon>dsRptWHInternMove01.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsStock.xsc">
+      <DependentUpon>dsStock.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsStock.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsStock.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsStock.xss">
+      <DependentUpon>dsStock.xsd</DependentUpon>
+    </None>
+    <None Include="GoWHMgmAdmin_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\xtrDeliveryForms.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xtrDeliveryForms.Designer.cs">
+      <DependentUpon>xtrDeliveryForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xtrInventoryList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xtrInventoryList.Designer.cs">
+      <DependentUpon>xtrInventoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xtrPickingList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xtrPickingList.Designer.cs">
+      <DependentUpon>xtrPickingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xtrRptWHInternMove01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xtrRptWHInternMove01.Designer.cs">
+      <DependentUpon>xtrRptWHInternMove01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SetUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUsers.Designer.cs">
+      <DependentUpon>SetUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DeFacut.txt" />
+    <Content Include="GRAPH07.ICO" />
+    <Content Include="GRAPH08.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
