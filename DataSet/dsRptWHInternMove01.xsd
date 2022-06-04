@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRptWHInternMove01" targetNamespace="http://tempuri.org/dsRptWHInternMove01.xsd" xmlns:mstns="http://tempuri.org/dsRptWHInternMove01.xsd" xmlns="http://tempuri.org/dsRptWHInternMove01.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRptWHInternMove01" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsRptWHInternMove01" msprop:Generator_UserDSName="dsRptWHInternMove01" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblRPWHInternMove01" msprop:Generator_UserTableName="tblRPWHInternMove01" msprop:Generator_RowDeletedName="tblRPWHInternMove01RowDeleted" msprop:Generator_TableClassName="tblRPWHInternMove01DataTable" msprop:Generator_RowChangedName="tblRPWHInternMove01RowChanged" msprop:Generator_RowClassName="tblRPWHInternMove01Row" msprop:Generator_RowChangingName="tblRPWHInternMove01RowChanging" msprop:Generator_RowEvArgName="tblRPWHInternMove01RowChangeEvent" msprop:Generator_RowEvHandlerName="tblRPWHInternMove01RowChangeEventHandler" msprop:Generator_TablePropName="tblRPWHInternMove01" msprop:Generator_TableVarName="tabletblRPWHInternMove01" msprop:Generator_RowDeletingName="tblRPWHInternMove01RowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ArtCode" msprop:Generator_UserColumnName="ArtCode" msprop:Generator_ColumnPropNameInRow="ArtCode" msprop:Generator_ColumnVarNameInTable="columnArtCode" msprop:Generator_ColumnPropNameInTable="ArtCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ArtDescription" msprop:Generator_UserColumnName="ArtDescription" msprop:Generator_ColumnPropNameInRow="ArtDescription" msprop:Generator_ColumnVarNameInTable="columnArtDescription" msprop:Generator_ColumnPropNameInTable="ArtDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LocOut" msprop:Generator_UserColumnName="LocOut" msprop:Generator_ColumnPropNameInRow="LocOut" msprop:Generator_ColumnVarNameInTable="columnLocOut" msprop:Generator_ColumnPropNameInTable="LocOutColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WHOut" msprop:Generator_UserColumnName="WHOut" msprop:Generator_ColumnPropNameInRow="WHOut" msprop:Generator_ColumnVarNameInTable="columnWHOut" msprop:Generator_ColumnPropNameInTable="WHOutColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LocIn" msprop:Generator_UserColumnName="LocIn" msprop:Generator_ColumnPropNameInRow="LocIn" msprop:Generator_ColumnVarNameInTable="columnLocIn" msprop:Generator_ColumnPropNameInTable="LocInColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WHIn" msprop:Generator_UserColumnName="WHIn" msprop:Generator_ColumnPropNameInRow="WHIn" msprop:Generator_ColumnVarNameInTable="columnWHIn" msprop:Generator_ColumnPropNameInTable="WHInColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Oper" msprop:Generator_UserColumnName="Oper" msprop:Generator_ColumnPropNameInRow="Oper" msprop:Generator_ColumnVarNameInTable="columnOper" msprop:Generator_ColumnPropNameInTable="OperColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OperList" msprop:Generator_UserColumnName="OperList" msprop:Generator_ColumnPropNameInRow="OperList" msprop:Generator_ColumnVarNameInTable="columnOperList" msprop:Generator_ColumnPropNameInTable="OperListColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WDate" msprop:Generator_UserColumnName="WDate" msprop:Generator_ColumnPropNameInRow="WDate" msprop:Generator_ColumnVarNameInTable="columnWDate" msprop:Generator_ColumnPropNameInTable="WDateColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetInventory" targetNamespace="http://tempuri.org/DataSetInventory.xsd" xmlns:mstns="http://tempuri.org/DataSetInventory.xsd" xmlns="http://tempuri.org/DataSetInventory.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetInventory" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetInventory" msprop:Generator_DataSetName="DataSetInventory">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblWork" msprop:Generator_UserTableName="tblWork" msprop:Generator_RowDeletedName="tblWorkRowDeleted" msprop:Generator_RowChangedName="tblWorkRowChanged" msprop:Generator_RowClassName="tblWorkRow" msprop:Generator_RowChangingName="tblWorkRowChanging" msprop:Generator_RowEvArgName="tblWorkRowChangeEvent" msprop:Generator_RowEvHandlerName="tblWorkRowChangeEventHandler" msprop:Generator_TableClassName="tblWorkDataTable" msprop:Generator_TableVarName="tabletblWork" msprop:Generator_RowDeletingName="tblWorkRowDeleting" msprop:Generator_TablePropName="tblWork">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="WHCode" msprop:Generator_UserColumnName="WHCode" msprop:Generator_ColumnPropNameInRow="WHCode" msprop:Generator_ColumnVarNameInTable="columnWHCode" msprop:Generator_ColumnPropNameInTable="WHCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ArticleCode" msprop:Generator_UserColumnName="ArticleCode" msprop:Generator_ColumnPropNameInRow="ArticleCode" msprop:Generator_ColumnVarNameInTable="columnArticleCode" msprop:Generator_ColumnPropNameInTable="ArticleCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ArticleDescription" msprop:Generator_UserColumnName="ArticleDescription" msprop:Generator_ColumnVarNameInTable="columnArticleDescription" msprop:Generator_ColumnPropNameInRow="ArticleDescription" msprop:Generator_ColumnPropNameInTable="ArticleDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="InventoryQty" msprop:Generator_UserColumnName="InventoryQty" msprop:Generator_ColumnPropNameInRow="InventoryQty" msprop:Generator_ColumnVarNameInTable="columnInventoryQty" msprop:Generator_ColumnPropNameInTable="InventoryQtyColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="StockBalance" msprop:Generator_UserColumnName="StockBalance" msprop:Generator_ColumnPropNameInRow="StockBalance" msprop:Generator_ColumnVarNameInTable="columnStockBalance" msprop:Generator_ColumnPropNameInTable="StockBalanceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CompPlus" msprop:Generator_UserColumnName="CompPlus" msprop:Generator_ColumnPropNameInRow="CompPlus" msprop:Generator_ColumnVarNameInTable="columnCompPlus" msprop:Generator_ColumnPropNameInTable="CompPlusColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CompMinus" msprop:Generator_UserColumnName="CompMinus" msprop:Generator_ColumnPropNameInRow="CompMinus" msprop:Generator_ColumnVarNameInTable="columnCompMinus" msprop:Generator_ColumnPropNameInTable="CompMinusColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DiffQty" msprop:Generator_UserColumnName="DiffQty" msprop:Generator_ColumnPropNameInRow="DiffQty" msprop:Generator_ColumnVarNameInTable="columnDiffQty" msprop:Generator_ColumnPropNameInTable="DiffQtyColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DiffAvgCost" msprop:Generator_UserColumnName="DiffAvgCost" msprop:Generator_ColumnPropNameInRow="DiffAvgCost" msprop:Generator_ColumnVarNameInTable="columnDiffAvgCost" msprop:Generator_ColumnPropNameInTable="DiffAvgCostColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AVGCostPU" msprop:Generator_UserColumnName="AVGCostPU" msprop:Generator_ColumnPropNameInRow="AVGCostPU" msprop:Generator_ColumnVarNameInTable="columnAVGCostPU" msprop:Generator_ColumnPropNameInTable="AVGCostPUColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblWorkD" msprop:Generator_UserTableName="tblWorkD" msprop:Generator_RowDeletedName="tblWorkDRowDeleted" msprop:Generator_RowChangedName="tblWorkDRowChanged" msprop:Generator_RowClassName="tblWorkDRow" msprop:Generator_RowChangingName="tblWorkDRowChanging" msprop:Generator_RowEvArgName="tblWorkDRowChangeEvent" msprop:Generator_RowEvHandlerName="tblWorkDRowChangeEventHandler" msprop:Generator_TableClassName="tblWorkDDataTable" msprop:Generator_TableVarName="tabletblWorkD" msprop:Generator_RowDeletingName="tblWorkDRowDeleting" msprop:Generator_TablePropName="tblWorkD">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_REC" msprop:Generator_UserColumnName="ID_REC" msprop:Generator_ColumnPropNameInRow="ID_REC" msprop:Generator_ColumnVarNameInTable="columnID_REC" msprop:Generator_ColumnPropNameInTable="ID_RECColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CountQty" msprop:Generator_UserColumnName="CountQty" msprop:Generator_ColumnPropNameInRow="CountQty" msprop:Generator_ColumnVarNameInTable="columnCountQty" msprop:Generator_ColumnPropNameInTable="CountQtyColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CountNo" msprop:Generator_UserColumnName="CountNo" msprop:Generator_ColumnPropNameInRow="CountNo" msprop:Generator_ColumnVarNameInTable="columnCountNo" msprop:Generator_ColumnPropNameInTable="CountNoColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="Locator" msprop:Generator_UserColumnName="Locator" msprop:Generator_ColumnPropNameInRow="Locator" msprop:Generator_ColumnVarNameInTable="columnLocator" msprop:Generator_ColumnPropNameInTable="LocatorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AreaCode" msprop:Generator_UserColumnName="AreaCode" msprop:Generator_ColumnPropNameInRow="AreaCode" msprop:Generator_ColumnVarNameInTable="columnAreaCode" msprop:Generator_ColumnPropNameInTable="AreaCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ListNumber" msprop:Generator_UserColumnName="ListNumber" msprop:Generator_ColumnPropNameInRow="ListNumber" msprop:Generator_ColumnVarNameInTable="columnListNumber" msprop:Generator_ColumnPropNameInTable="ListNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Operator" msprop:Generator_UserColumnName="Operator" msprop:Generator_ColumnPropNameInRow="Operator" msprop:Generator_ColumnVarNameInTable="columnOperator" msprop:Generator_ColumnPropNameInTable="OperatorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IsValidate" msprop:Generator_UserColumnName="IsValidate" msprop:Generator_ColumnPropNameInRow="IsValidate" msprop:Generator_ColumnVarNameInTable="columnIsValidate" msprop:Generator_ColumnPropNameInTable="IsValidateColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="tblWorkDetail" msdata:parent="tblWork" msdata:child="tblWorkD" msdata:parentkey="ID" msdata:childkey="ID_REC" msprop:Generator_UserRelationName="tblWorkDetail" msprop:Generator_RelationVarName="relationtblWorkDetail" msprop:Generator_UserChildTable="tblWorkD" msprop:Generator_UserParentTable="tblWork" msprop:Generator_ParentPropName="tblWorkRow" msprop:Generator_ChildPropName="GettblWorkDRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
